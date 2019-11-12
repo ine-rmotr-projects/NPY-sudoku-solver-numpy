@@ -1,6 +1,6 @@
 # Numpy Sudoku
 
-**[FORK
+**👉[Open this project using notebooks.ai](https://notebooks.ai/clone/gh/ine-rmotr-projects/NPY-sudoku-solver-numpy)👈**
 
 <p align="center">
   <img width="600px" src="https://user-images.githubusercontent.com/872296/68670705-499dce00-052c-11ea-8e82-18a1f435e274.png">
