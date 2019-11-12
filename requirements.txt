@@ -1,4 +1,4 @@
 numpy==1.16.5
 
 # Testing
-pytest==5.2.2
+pytest==4.6.6
