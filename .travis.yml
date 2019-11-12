@@ -1,4 +1,4 @@
-anguage: python
+language: python
 sudo: false
 os:
   - linux
