@@ -7,26 +7,35 @@ def string_puzzle_to_arr(puzzle):
     return np.array([list(line.strip()) for line in puzzle.split('\n') if line.strip()], dtype=np.int)
 
 class Board:
-    def __init__(self, puzzle):
-        pass
+    def __init__(self, puzzle_string):
+        if type(puzzle_string) == str:
+            self.arr = string_puzzle_to_arr(puzzle_string)
+        else:
+            self.arr = puzzle_string
 
     def get_row(self, row_index):
-        pass
+        return self.arr[row_index]
 
     def get_column(self, col_index):
-        pass
+        return self.arr[:, col_index]
 
     def get_block(self, pos_1, pos_2):
-        pass
+        return self.arr[(pos_1 * 3): ((pos_1+1) * 3), (pos_2 * 3): ((pos_2+1) * 3)]
 
     def iter_rows(self):
-        pass
+        return [row for row in self.arr]
 
     def iter_columns(self):
-        pass
+        return [col for col in self.arr.T]
 
     def iter_blocks(self):
-        pass
+        return [self.arr[(pos_1 * 3): ((pos_1+1) * 3), (pos_2 * 3): ((pos_2+1) * 3)] for pos_1 in range(3) for pos_2 in range(3)]
+        # Simplified version for reading purposes:
+        # result = []
+        # for pos_1 in range(3):
+        #     for pos_2 in range(3):
+        #         block = puzzle[(pos_1 * 3): ((pos_1+1) * 3), (pos_2 * 3): ((pos_2+1) * 3)]
+        #         result.append(block)
 
 
 # Part 2:
