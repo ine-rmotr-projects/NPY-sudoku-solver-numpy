@@ -125,3 +125,19 @@ def detect_invalid_solutions(filename):
         if not is_valid(puzzle_obj):
             list_invalids.append(puzzle)
     return np.array(list_invalids)
+
+def solve_sudoku(board):
+    if is_full(board):
+        return True
+    else:
+        empty_rows = find_empty(board)
+        for position in empty_rows:
+            for num in range(1,10):
+                 if num in find_possibilities(board,position[0],position[1]):
+                        board.arr[position[0]][position[1]] = num
+                        if solve_sudoku(board):
+                            return True
+                        else:
+                            board.arr[position[0]][position[1]] = 0
+                        
+            return False
