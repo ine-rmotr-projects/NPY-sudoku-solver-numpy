@@ -6,4 +6,6 @@
 
 This is our final project for our Numpy course! With it, we'll explore multiple problems related to [Sudoku Games](https://en.wikipedia.org/wiki/Sudoku).
 
-The project is a combination of notebooks that will guide you step by step through the process of, understanding sudokus, their representation using Numpy and finally how to solve them!. The final code is the sudoku.py file 
+The project is a combination of notebooks that will guide you step by step through the process of, understanding sudokus, their representation using Numpy and finally how to solve them using a backtracking algorithm!. 
+
+The completed code is the sudoku.py file 
