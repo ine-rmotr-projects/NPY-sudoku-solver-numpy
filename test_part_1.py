@@ -140,5 +140,4 @@ def test_board_iter_blocks():
          [1, 9, 7]]),
     ]
     board = Board(EMPTY_BOARD_ARR)
-    
     assert np.array_equal(board.iter_blocks(), expected)
