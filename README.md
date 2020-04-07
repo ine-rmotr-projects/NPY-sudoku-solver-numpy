@@ -10,4 +10,4 @@ This is our final project for our Numpy course! With it, we'll explore multiple 
 
 The project is a combination of notebooks that will guide you step by step through the process of, understanding sudokus, their representation using Numpy and finally how to solve them!
 
-Start with the first Notebook: `1. Sudoku Board.ipynb` and best of luck!
+Start with the first Notebook: `1. Sudoku Board.ipynb` and best of luck!!!
