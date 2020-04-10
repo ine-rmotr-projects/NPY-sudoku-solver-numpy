@@ -1,4 +1,1 @@
-numpy==1.17.4
 
-# Testing
-pytest==5.2.2
