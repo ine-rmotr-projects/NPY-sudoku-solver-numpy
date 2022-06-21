@@ -1,4 +1,4 @@
-numpy==1.17.4
+numpy==1.22.0
 
 # Testing
 pytest==5.2.2
